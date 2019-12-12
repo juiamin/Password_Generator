@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Password Generator</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" >
-    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="assets/style.css">
   </head>
   <body>
-    <div class="wrapper col-lg-8 col-sm-12 ">
+    <div class="wrapper">
       <header>
         <h1>Password Generator</h1>
       </header>
@@ -20,7 +20,6 @@
         <div class="card-body">
           <textarea id="display"
             readonly
-         
             placeholder="Your Secure Password"
             aria-label="Generated Password"
           ></textarea>
@@ -30,6 +29,7 @@
         <div class="card-footer">
           <button onclick="generate()" class="btn">Generate Password</button>
           <button onclick="copyPassword()" class="btn">Copy to Clipboard</button>
+          <div id="length"></div>
         </div>
       </div>
     </div>
