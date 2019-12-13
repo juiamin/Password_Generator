@@ -133,6 +133,8 @@ button[disabled] {
 }
 #slider{
   width: 100%;
+  border: 0;
+    
 }
 #length{
   display: inline-block;
