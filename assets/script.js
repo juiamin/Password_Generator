@@ -19,7 +19,7 @@ function generate(){
 
   // copyBtn.removeAttribute("disabled");
   
-  copyBtn.focus();
+  // copyBtn.focus();
 
 }
 
