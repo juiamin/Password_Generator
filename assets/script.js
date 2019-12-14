@@ -1,16 +1,16 @@
 function generate(){
 
   
-  // var complexity = document.getElementById("slider").value;
+  
 
   var complexity = document.getElementById("slider").value;
-  //console.log(complexity);
+ //console.log(complexity);
   var values = "ABCDEFGHIJKLMNOPQRSTUVWZYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()_+";
 
   var password = "";
-
+  console.log(complexity);
   
-  for(var i = 0; i <= complexity; i++){
+  for(var i = 0; i < complexity; i++){
       password = password + values.charAt(Math.floor(Math.random() * Math.floor(values.length - 1)));
   }
 
@@ -43,6 +43,7 @@ document.getElementById("slider").oninput = function(){
   }
   else{
       document.getElementById("length").innerHTML = "Length: 1";
+      
   }
 
 }
